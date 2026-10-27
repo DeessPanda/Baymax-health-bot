@@ -1,7 +1,4 @@
 # 🤖 Baymax-Inspired Mobile Health Monitoring Robot
-https://img.shields.io/badge/Status-Phase%201%20(Software%20Architecture)-blue
-https://img.shields.io/badge/License-MIT-green
-https://img.shields.io/badge/Platform-ESP32%20%7C%20Web-red
 
 📌 Project Overview
 This project is a low-cost, wheeled health-monitoring robot designed to assist in rural Indian clinics and elderly care. Inspired by Baymax from Big Hero 6, the goal is to create a friendly, non-invasive companion that automates vital sign monitoring and provides empathetic interaction.
