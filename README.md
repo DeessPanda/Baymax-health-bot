@@ -72,9 +72,11 @@ Open the Serial Monitor (115200 baud).
 Pair your phone to the Bluetooth device named "Baymax_Health_Bot" and use any Serial Bluetooth Terminal app to view the incoming JSON data payload.
 
 🗺️ Roadmap
+
 ☑ Phase 1 (Current): Software architecture, ESP32 JSON payload logic, UI dashboard design.
 □ Phase 2 (Hardware Assembly): Physical wiring validation, battery integration, and mounting on a 4WD chassis.
 □ Phase 3 (AI & Vision): Raspberry Pi integration, camera module for face recognition, and deploying the bilingual AI model.
+
 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
