@@ -74,7 +74,9 @@ Pair your phone to the Bluetooth device named "Baymax_Health_Bot" and use any Se
 🗺️ Roadmap
 
 ☑ Phase 1 (Current): Software architecture, ESP32 JSON payload logic, UI dashboard design.
+
 □ Phase 2 (Hardware Assembly): Physical wiring validation, battery integration, and mounting on a 4WD chassis.
+
 □ Phase 3 (AI & Vision): Raspberry Pi integration, camera module for face recognition, and deploying the bilingual AI model.
 
 📜 License
