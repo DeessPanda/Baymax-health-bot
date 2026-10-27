@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baymax Health Dashboard</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f4f8; margin: 0; padding: 20px; color: #333; }
+        .container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1000px; margin: auto; }
+        .card { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .vitals { display: flex; justify-content: space-around; text-align: center; }
+        .vital-box h2 { margin: 0; color: #e53e3e; font-size: 2.5rem; }
+        .vital-box p { margin: 5px 0 0 0; color: #718096; font-weight: bold; }
+        .camera-feed { width: 100%; height: 250px; background: #2d3748; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #a0aec0; margin-bottom: 20px; }
+        .ai-chat { border-left: 4px solid #4299e1; padding-left: 10px; margin-top: 20px; }
+        .ai-chat h3 { margin-top: 0; color: #2b6cb0; }
+        .status { padding: 5px 10px; background: #c6f6d5; color: #22543d; border-radius: 20px; font-size: 0.8rem; display: inline-block; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Column: Vitals & Hardware -->
+        <div class="card">
+            <h2>Patient Vitals <span class="status">Connected to ESP32</span></h2>
+            <div class="vitals">
+                <div class="vital-box"><h2 id="hr">--</h2><p>Heart Rate (BPM)</p></div>
+                <div class="vital-box"><h2 id="temp">--</h2><p>Temp (°C)</p></div>
+                <div class="vital-box"><h2 id="spo2">--</h2><p>SpO2 (%)</p></div>
+            </div>
+            <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 20px 0;">
+            <h3>Robot Controls (Phase 3)</h3>
+            <button style="padding: 10px; border-radius: 5px; border: none; background: #4299e1; color: white; cursor: pointer;">Move to Patient</button>
+            <button style="padding: 10px; border-radius: 5px; border: none; background: #e53e3e; color: white; cursor: pointer;">Emergency Stop</button>
+        </div>
+
+        <!-- Right Column: Vision & AI -->
+        <div class="card">
+            <h3>Camera Feed (Vision)</h3>
+            <div class="camera-feed">
+                [Live Camera Feed Placeholder - Raspberry Pi / ESP32-CAM]
+            </div>
+            <div class="ai-chat">
+                <h3>Baymax AI Assistant</h3>
+                <p><strong>Baymax:</strong> "Hello, I am your healthcare companion. I am monitoring your vitals. How are you feeling today?"</p>
+                <input type="text" placeholder="Speak or type in Tamil/English..." style="width: 90%; padding: 10px; border-radius: 5px; border: 1px solid #cbd5e0; margin-top: 10px;">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simulated live data update for demonstration
+        setInterval(() => {
+            document.getElementById('hr').innerText = Math.floor(Math.random() * (90 - 70) + 70);
+            document.getElementById('temp').innerText = (Math.random() * (37.5 - 36.1) + 36.1).toFixed(1);
+            document.getElementById('spo2').innerText = Math.floor(Math.random() * (100 - 96) + 96);
+        }, 2000);
+    </script>
+</body>
+</html>
